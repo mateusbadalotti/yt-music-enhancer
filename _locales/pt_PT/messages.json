@@ -1,0 +1,216 @@
+{
+  "languageTag": {
+    "message": "pt-PT"
+  },
+  "extensionDescription": {
+    "message": "Personalize a página inicial do YouTube Music com os seus artistas e secções favoritas."
+  },
+  "yourPlaylists": {
+    "message": "As suas playlists"
+  },
+  "artistSets": {
+    "message": "Sets dos seus artistas"
+  },
+  "artistReleases": {
+    "message": "Novidades dos seus artistas"
+  },
+  "longListens": {
+    "message": "As suas audições longas"
+  },
+  "customizeHome": {
+    "message": "Personalizar YouTube Music"
+  },
+  "homeDescription": {
+    "message": "Escolha o aspeto da página inicial e do leitor."
+  },
+  "player": {
+    "message": "Leitor"
+  },
+  "hidePlayerPanel": {
+    "message": "Ocultar painel lateral do leitor"
+  },
+  "hidePlayerPanelDescription": {
+    "message": "Centra a capa do álbum e oculta a fila, letras, comentários e conteúdo relacionado."
+  },
+  "yourArtists": {
+    "message": "Os seus artistas"
+  },
+  "artistsDescription": {
+    "message": "Músicas, sets e novidades dos artistas que escolheres."
+  },
+  "searchArtist": {
+    "message": "Pesquisar um artista"
+  },
+  "search": {
+    "message": "Pesquisar"
+  },
+  "sections": {
+    "message": "Secções"
+  },
+  "sectionsDescription": {
+    "message": "Ative e organize as secções. As suas escolhas são guardadas, e as novas secções do YouTube começam ocultas."
+  },
+  "autoSave": {
+    "message": "As alterações são guardadas automaticamente."
+  },
+  "closeSettings": {
+    "message": "Fechar definições"
+  },
+  "reset": {
+    "message": "Repor predefinições"
+  },
+  "done": {
+    "message": "Concluir"
+  },
+  "saved": {
+    "message": "Alterações guardadas."
+  },
+  "saveError": {
+    "message": "Não foi possível guardar as suas preferências. Recarregue a página e tente novamente."
+  },
+  "storageError": {
+    "message": "Não foi possível ler as suas preferências. Recarregue a página."
+  },
+  "enhancerSource": {
+    "message": "Secção adicionada pelo Enhance for Youtube Music™."
+  },
+  "youtubeSource": {
+    "message": "Secção fornecida pelo YouTube Music."
+  },
+  "moveUp": {
+    "message": "Subir $section$",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "moveDown": {
+    "message": "Descer $section$",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "removeArtist": {
+    "message": "Remover $artist$",
+    "placeholders": {
+      "artist": {
+        "content": "$1"
+      }
+    }
+  },
+  "searchingArtists": {
+    "message": "A pesquisar artistas…"
+  },
+  "noArtists": {
+    "message": "Nenhum artista encontrado."
+  },
+  "add": {
+    "message": "Adicionar"
+  },
+  "added": {
+    "message": "Adicionado"
+  },
+  "loadingSections": {
+    "message": "A carregar todas as secções do YouTube…"
+  },
+  "retry": {
+    "message": "Tentar novamente"
+  },
+  "loading": {
+    "message": "A carregar…"
+  },
+  "noSets": {
+    "message": "Nenhum set de 30 minutos ou mais encontrado para seus artistas."
+  },
+  "newFromArtist": {
+    "message": "Novidades de $artist$",
+    "placeholders": {
+      "artist": {
+        "content": "$1"
+      }
+    }
+  },
+  "setsError": {
+    "message": "Não foi possível carregar os sets do YouTube. Tente novamente."
+  },
+  "musicLoading": {
+    "message": "O YouTube Music ainda está a carregar. Tente novamente."
+  },
+  "musicTimeout": {
+    "message": "O YouTube Music demorou a responder. Tente novamente."
+  },
+  "musicHttpError": {
+    "message": "O YouTube Music respondeu com o erro $status$. Tente novamente.",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "musicLoadError": {
+    "message": "Não foi possível carregar os dados do YouTube Music. Tente novamente."
+  },
+  "listenedArtists": {
+    "message": "Artistas que já ouviste"
+  },
+  "noListenedArtists": {
+    "message": "Ouve música no YouTube Music para descobrir músicas e sets desses artistas."
+  },
+  "surpriseMe": {
+    "message": "Surpreende-me"
+  },
+  "settingsBackup": {
+    "message": "Cópia das definições"
+  },
+  "backupDescription": {
+    "message": "Exporta os teus artistas, preferências da página inicial e definições do leitor. A importação substitui as preferências atuais. O histórico de reprodução não é incluído."
+  },
+  "exportSettings": {
+    "message": "Exportar definições"
+  },
+  "importSettings": {
+    "message": "Importar definições"
+  },
+  "importingSettings": {
+    "message": "A importar definições…"
+  },
+  "settingsImported": {
+    "message": "Definições importadas."
+  },
+  "invalidBackup": {
+    "message": "Ficheiro de definições inválido. Escolhe um ficheiro JSON do Enhance até 1 MB."
+  },
+  "setsBlocked": {
+    "message": "O YouTube bloqueou estas pesquisas. Aguarda um minuto antes de tentar novamente."
+  },
+  "previousItems": {
+    "message": "Itens anteriores"
+  },
+  "nextItems": {
+    "message": "Próximos itens"
+  },
+  "artistMusic": {
+    "message": "Músicas dos teus artistas"
+  },
+  "loadMore": {
+    "message": "Carregar mais"
+  },
+  "noArtistMusic": {
+    "message": "Não foram encontradas músicas dos artistas selecionados."
+  },
+  "noMoreMusic": {
+    "message": "Chegaste ao fim das músicas disponíveis."
+  },
+  "home": {
+    "message": "Página inicial"
+  },
+  "hideHomeFilters": {
+    "message": "Ocultar filtros da página inicial"
+  },
+  "hideHomeFiltersDescription": {
+    "message": "Oculta os botões de atividades e momentos, como Podcasts, Romance e Treino."
+  }
+}

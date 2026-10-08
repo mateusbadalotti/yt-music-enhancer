@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Enhance for Youtube Music™. Learn what the extension uses, stores and sends to YouTube.">
+  <meta name="color-scheme" content="light">
+  <title>Privacy · Enhance for Youtube Music™</title>
+  <style>
+    :root { --ink: #162331; --muted: #4d6271; --paper: #f1f5f7; --line: #ccd8df; --accent: #a53129; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: linear-gradient(135deg, #e3ecf2, var(--paper) 45%); color: var(--ink); font: 17px/1.65 "Avenir Next", "Trebuchet MS", sans-serif; }
+    header, main, footer { width: min(820px, calc(100% - 48px)); margin-inline: auto; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 32px 0; border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 600; line-height: 1.4; }
+    .brand svg { width: 44px; height: 44px; flex-shrink: 0; }
+    nav { display: flex; gap: 6px; }
+    button { font: inherit; font-size: 14px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 24px; color: var(--ink); background: transparent; cursor: pointer; }
+    button[aria-pressed="true"] { color: white; background: var(--ink); border-color: var(--ink); }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    main { padding: 52px 0 32px; }
+    h1 { margin: 0 0 14px; font: 500 clamp(38px, 7vw, 62px)/1.12 Georgia, serif; letter-spacing: -2px; }
+    h2 { font-size: 21px; line-height: 1.35; margin: 0 0 12px; }
+    p { margin: 0 0 16px; }
+    .date { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    .summary { border-left: 3px solid var(--accent); padding-left: 22px; font-size: 20px; line-height: 1.55; margin-bottom: 40px; }
+    section { padding: 24px 0 8px; border-top: 1px solid var(--line); }
+    li { margin-bottom: 12px; }
+    ul { padding-left: 22px; }
+    a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+    footer { padding: 24px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    [hidden] { display: none; }
+    @media (max-width: 540px) { header { align-items: flex-start; flex-direction: column; gap: 18px; } main { padding-top: 36px; } }
+    @media print { body { background: white; } nav { display: none; } header, main, footer { width: 100%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><svg viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="32" fill="#162331"/><path d="M32 36h64M32 64h64M32 92h64" stroke="#ff7869" stroke-width="9" stroke-linecap="round"/><path d="M50 29v14M81 57v14M55 85v14" stroke="#fff4ed" stroke-width="12" stroke-linecap="round"/></svg><span>Enhance<br>for Youtube Music™</span></div>
+    <nav aria-label="Language / Idioma"><button type="button" data-language="en" aria-pressed="true" lang="en">English</button><button type="button" data-language="pt" aria-pressed="false" lang="pt-BR">Português</button></nav>
+  </header>
+  <main>
+    <article id="en" lang="en">
+      <h1>Privacy, in plain language.</h1>
+      <p class="date">Privacy policy · Updated October 8, 2026 · Extension version 1.0.0.</p>
+      <p class="summary">Enhance customizes your YouTube Music home and player. Your preferences stay in your browser. Music requests go to YouTube and Google services. The extension has no developer-operated server, analytics or advertising.</p>
+      <section><h2>What the extension accesses.</h2><ul>
+        <li><strong>Preferences.</strong> Selected artist names, channel IDs and image URLs; home section titles, order and visibility; home filter visibility; and the player side-panel setting.</li>
+        <li><strong>YouTube Music content.</strong> Home sections, saved playlists, listening history, artist information and music metadata, including titles, artwork, channels, links and durations. This content builds the personalized shelves, long listens and recommendations.</li>
+        <li><strong>Searches.</strong> Artist names you enter or that come from your listening history, used to find artists, songs and sets.</li>
+        <li><strong>Existing session information.</strong> The extension reads YouTube Music page configuration and an available authentication cookie in page memory to sign requests to YouTube Music. It does not ask for your password, store the cookie or authentication signature in extension storage, or send them to the developer.</li>
+      </ul><p>It does not read your general browser history or operate on unrelated websites. YouTube responses may include account or playlist-owner display information; the extension does not create an account profile on a developer server.</p></section>
+      <section><h2>Where requests go.</h2><p>Authenticated requests go directly to <strong>music.youtube.com</strong> using your existing session. Public set searches send artist names to <strong>www.youtube.com</strong> without account cookies. Artwork loads from YouTube and Google image services, including ytimg.com, googleusercontent.com, ggpht.com and gstatic.com.</p><p>These services receive normal network information such as your IP address and request details. Their handling is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The extension does not sell data, send it to data brokers, or use it for advertising, credit or lending decisions.</p></section>
+      <section><h2>Storage and retention.</h2><p>Preferences are saved locally in your browser profile until you change them or uninstall the extension. They are not synced by the extension and are shared across YouTube accounts used in that browser profile.</p><p>Music responses, library content and listening history are held in the page's memory until the tab is reloaded or closed. Reload the tab after switching YouTube accounts.</p><p>Public set results and request timing information are kept in temporary browser session storage. Results may be reused for 30 minutes; this is a freshness limit, not a deletion deadline. Session entries can remain until replaced or until the browser session ends or the extension is disabled, reloaded or removed.</p></section>
+      <section><h2>Your controls.</h2><p>Open the gear beside the profile area on YouTube Music to change your artists, sections and player settings. Export and import at the bottom of settings contain preferences only, not listening history or authentication cookies. An exported file remains wherever you save it until you delete it.</p><p>Disabling the extension stops its activity after open YouTube Music tabs are reloaded. Uninstall it to remove its saved local preferences. This does not delete your YouTube account, playlists or history; manage those through YouTube or Google.</p></section>
+      <section><h2>Permissions and limited use.</h2><p>The <strong>storage</strong> permission saves preferences and temporary results. Access to <strong>www.youtube.com</strong> enables public set searches. Scripts on <strong>music.youtube.com</strong> add the settings interface and personalized shelves.</p><p>Data is used only to provide these visible features. Enhance's use and transfer of data complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. The developer does not receive or review your listening activity through the extension.</p></section>
+      <section><h2>Contact and changes.</h2><p>For support or privacy questions, email <a href="mailto:mateus.badalotti@gmail.com">mateus.badalotti@gmail.com</a>. If you contact support, your email address and the information you choose to send are handled through Gmail to respond to your request. You can request deletion of that correspondence.</p><p>Changes to this policy will appear on this page with a revised date. This is an independent extension, not affiliated with or endorsed by YouTube or Google. YouTube and YouTube Music are trademarks of Google LLC.</p></section>
+    </article>
+    <article id="pt" lang="pt-BR" hidden>
+      <h1>Privacidade, sem rodeios.</h1>
+      <p class="date">Política de privacidade · Atualizada em 8 de outubro de 2026 · Versão 1.0.0 da extensão.</p>
+      <p class="summary">O Enhance personaliza a home e o player do YouTube Music. Suas preferências ficam no navegador. As consultas de música vão para serviços do YouTube e do Google. A extensão não tem servidor próprio, analytics ou publicidade.</p>
+      <section><h2>O que a extensão acessa.</h2><ul>
+        <li><strong>Preferências.</strong> Nomes dos artistas escolhidos, IDs dos canais e URLs das imagens; títulos, ordem e visibilidade das seções da home; visibilidade dos filtros da home; e a configuração do painel lateral do player.</li>
+        <li><strong>Conteúdo do YouTube Music.</strong> Seções da home, playlists salvas, histórico de reprodução, informações de artistas e metadados de músicas, incluindo títulos, capas, canais, links e duração. Esses dados compõem as seções personalizadas, as reproduções longas e as recomendações.</li>
+        <li><strong>Buscas.</strong> Nomes de artistas que você pesquisa ou que aparecem no seu histórico, usados para encontrar artistas, músicas e sets.</li>
+        <li><strong>Informações da sessão existente.</strong> A extensão lê a configuração da página do YouTube Music e um cookie de autenticação disponível na memória da página para assinar requisições ao próprio YouTube Music. Ela não pede sua senha, não guarda esse cookie ou a assinatura no armazenamento da extensão e não os envia ao desenvolvedor.</li>
+      </ul><p>A extensão não lê o histórico geral do navegador nem atua em outros sites. Respostas do YouTube podem incluir informações de exibição da conta ou do dono de uma playlist; a extensão não cria um perfil de conta em servidor do desenvolvedor.</p></section>
+      <section><h2>Para onde vão as consultas.</h2><p>Requisições autenticadas vão diretamente para <strong>music.youtube.com</strong>, usando sua sessão existente. Buscas públicas de sets enviam nomes de artistas para <strong>www.youtube.com</strong>, sem cookies da conta. As capas vêm de serviços de imagens do YouTube e do Google, incluindo ytimg.com, googleusercontent.com, ggpht.com e gstatic.com.</p><p>Esses serviços recebem informações normais de conexão, como endereço IP e detalhes da requisição. O tratamento desses dados segue a <a href="https://policies.google.com/privacy?hl=pt-BR">Política de Privacidade do Google</a>. A extensão não vende dados, não os envia a corretores de dados e não os usa para publicidade ou decisões de crédito.</p></section>
+      <section><h2>Armazenamento e retenção.</h2><p>As preferências ficam no perfil local do navegador até você alterá-las ou desinstalar a extensão. A extensão não sincroniza esses dados. As mesmas preferências valem para as contas do YouTube usadas nesse perfil do navegador.</p><p>Respostas de música, conteúdo da biblioteca e histórico de reprodução ficam na memória da página até a aba ser recarregada ou fechada. Recarregue a aba ao trocar de conta no YouTube.</p><p>Resultados públicos de sets e informações de intervalo entre consultas ficam no armazenamento temporário da sessão do navegador. Os resultados podem ser reutilizados por 30 minutos; esse prazo limita a reutilização, não determina a exclusão. Os dados podem permanecer até serem substituídos, a sessão do navegador terminar ou a extensão ser desativada, recarregada ou removida.</p></section>
+      <section><h2>Seus controles.</h2><p>Abra a engrenagem ao lado da área do perfil no YouTube Music para alterar artistas, seções e o player. Os recursos de exportar e importar, no fim das configurações, incluem apenas preferências, sem histórico de reprodução ou cookies de autenticação. Um arquivo exportado permanece onde você o salvar até ser excluído por você.</p><p>Desativar a extensão interrompe sua atividade após recarregar as abas abertas do YouTube Music. Desinstale-a para remover as preferências locais salvas. Isso não apaga sua conta, playlists ou histórico do YouTube; gerencie esses dados pelo YouTube ou Google.</p></section>
+      <section><h2>Permissões e uso limitado.</h2><p>A permissão <strong>storage</strong> salva preferências e resultados temporários. O acesso a <strong>www.youtube.com</strong> permite buscar sets públicos. Os scripts em <strong>music.youtube.com</strong> adicionam a interface de configurações e as seções personalizadas.</p><p>Os dados são usados apenas para oferecer esses recursos visíveis. O uso e a transferência de dados pelo Enhance seguem a Política de Dados do Usuário da Chrome Web Store, incluindo os requisitos de Uso Limitado. O desenvolvedor não recebe nem consulta sua atividade de reprodução pela extensão.</p></section>
+      <section><h2>Contato e alterações.</h2><p>Para suporte ou dúvidas sobre privacidade, escreva para <a href="mailto:mateus.badalotti@gmail.com">mateus.badalotti@gmail.com</a>. Ao entrar em contato, seu e-mail e as informações que você decidir enviar são tratados pelo Gmail para responder à solicitação. Você pode pedir a exclusão dessa correspondência.</p><p>Alterações desta política aparecerão nesta página com uma nova data. Esta extensão é independente, sem vínculo ou endosso do YouTube ou do Google. YouTube e YouTube Music são marcas da Google LLC.</p></section>
+    </article>
+  </main>
+  <footer>Enhance for Youtube Music™ · <a href="mailto:mateus.badalotti@gmail.com">mateus.badalotti@gmail.com</a></footer>
+  <script>
+    function setLanguage(language) {
+      const selected = language === "pt" ? "pt" : "en";
+      document.documentElement.lang = selected === "pt" ? "pt-BR" : "en";
+      document.title = `${selected === "pt" ? "Privacidade" : "Privacy"} · Enhance for Youtube Music™`;
+      document.querySelectorAll("article").forEach(article => { article.hidden = article.id !== selected; });
+      document.querySelectorAll("[data-language]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.language === selected)));
+    }
+    document.querySelectorAll("[data-language]").forEach(button => button.addEventListener("click", () => setLanguage(button.dataset.language)));
+    setLanguage(navigator.language.toLowerCase().startsWith("pt") ? "pt" : "en");
+  </script>
+</body>
+</html>

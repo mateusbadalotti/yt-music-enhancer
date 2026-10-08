@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <radialGradient id="light"><stop stop-color="#294454"/><stop offset="1" stop-color="#162331"/></radialGradient>
+  </defs>
+  <path fill="url(#light)" d="M0 0h440v280H0z"/>
+  <g fill="none" stroke="#3d5967" opacity=".5">
+    <circle cx="388" cy="68" r="56"/><circle cx="388" cy="68" r="82"/><circle cx="388" cy="68" r="108"/><circle cx="388" cy="68" r="134"/>
+  </g>
+  <rect x="30" y="30" width="62" height="62" rx="18" fill="#ff7869"/>
+  <path d="M46 48h30M46 61h30M46 74h30" stroke="#162331" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 44v8M69 57v8M58 70v8" stroke="#fff4ed" stroke-width="6" stroke-linecap="round"/>
+  <text x="28" y="170" fill="#fff4ed" font-family="Avenir Next, Trebuchet MS, sans-serif" font-size="59" font-weight="700" letter-spacing="-2">Enhance</text>
+  <text x="31" y="209" fill="#d6e2e8" font-family="Avenir Next, Trebuchet MS, sans-serif" font-size="24">for YouTube Music™</text>
+  <path d="M32 243h48" stroke="#ff7869" stroke-width="4" stroke-linecap="round"/>
+</svg>

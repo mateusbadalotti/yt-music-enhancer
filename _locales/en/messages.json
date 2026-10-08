@@ -1,0 +1,216 @@
+{
+  "languageTag": {
+    "message": "en"
+  },
+  "extensionDescription": {
+    "message": "Customize YouTube Music's home page with your favorite artists and sections."
+  },
+  "yourPlaylists": {
+    "message": "Your playlists"
+  },
+  "artistSets": {
+    "message": "Sets from your artists"
+  },
+  "artistReleases": {
+    "message": "New from your artists"
+  },
+  "longListens": {
+    "message": "Your long listens"
+  },
+  "customizeHome": {
+    "message": "Customize YouTube Music"
+  },
+  "homeDescription": {
+    "message": "Choose how your home page and player look."
+  },
+  "player": {
+    "message": "Player"
+  },
+  "hidePlayerPanel": {
+    "message": "Hide the player side panel"
+  },
+  "hidePlayerPanelDescription": {
+    "message": "Center the album cover and hide the queue, lyrics, comments and related content."
+  },
+  "yourArtists": {
+    "message": "Your artists"
+  },
+  "artistsDescription": {
+    "message": "Songs, sets and new releases from the artists you choose."
+  },
+  "searchArtist": {
+    "message": "Search for an artist"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "sections": {
+    "message": "Sections"
+  },
+  "sectionsDescription": {
+    "message": "Show and arrange sections. Your choices are saved, and new YouTube sections start hidden."
+  },
+  "autoSave": {
+    "message": "Changes are saved automatically."
+  },
+  "closeSettings": {
+    "message": "Close settings"
+  },
+  "reset": {
+    "message": "Reset to default"
+  },
+  "done": {
+    "message": "Done"
+  },
+  "saved": {
+    "message": "Changes saved."
+  },
+  "saveError": {
+    "message": "Couldn't save your preferences. Reload the page and try again."
+  },
+  "storageError": {
+    "message": "Couldn't read your preferences. Reload the page."
+  },
+  "enhancerSource": {
+    "message": "Section added by Enhance for Youtube Music™."
+  },
+  "youtubeSource": {
+    "message": "Section provided by YouTube Music."
+  },
+  "moveUp": {
+    "message": "Move $section$ up",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "moveDown": {
+    "message": "Move $section$ down",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "removeArtist": {
+    "message": "Remove $artist$",
+    "placeholders": {
+      "artist": {
+        "content": "$1"
+      }
+    }
+  },
+  "searchingArtists": {
+    "message": "Searching for artists…"
+  },
+  "noArtists": {
+    "message": "No artists found."
+  },
+  "add": {
+    "message": "Add"
+  },
+  "added": {
+    "message": "Added"
+  },
+  "loadingSections": {
+    "message": "Loading all YouTube sections…"
+  },
+  "retry": {
+    "message": "Try again"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "noSets": {
+    "message": "No sets of 30 minutes or longer found for your artists."
+  },
+  "newFromArtist": {
+    "message": "New from $artist$",
+    "placeholders": {
+      "artist": {
+        "content": "$1"
+      }
+    }
+  },
+  "setsError": {
+    "message": "Couldn't load sets from YouTube. Try again."
+  },
+  "musicLoading": {
+    "message": "YouTube Music is still loading. Try again."
+  },
+  "musicTimeout": {
+    "message": "YouTube Music took too long to respond. Try again."
+  },
+  "musicHttpError": {
+    "message": "YouTube Music returned error $status$. Try again.",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "musicLoadError": {
+    "message": "Couldn't load data from YouTube Music. Try again."
+  },
+  "listenedArtists": {
+    "message": "Artists you have listened to"
+  },
+  "noListenedArtists": {
+    "message": "Listen to music on YouTube Music to discover songs and sets from those artists."
+  },
+  "surpriseMe": {
+    "message": "Surprise me"
+  },
+  "settingsBackup": {
+    "message": "Settings backup"
+  },
+  "backupDescription": {
+    "message": "Export your artists, home preferences and player settings. Import replaces your current preferences. Listening history is not included."
+  },
+  "exportSettings": {
+    "message": "Export settings"
+  },
+  "importSettings": {
+    "message": "Import settings"
+  },
+  "importingSettings": {
+    "message": "Importing settings…"
+  },
+  "settingsImported": {
+    "message": "Settings imported."
+  },
+  "invalidBackup": {
+    "message": "Invalid settings file. Choose an Enhance settings JSON file up to 1 MB."
+  },
+  "setsBlocked": {
+    "message": "YouTube blocked these searches. Wait a minute before trying again."
+  },
+  "previousItems": {
+    "message": "Previous items"
+  },
+  "nextItems": {
+    "message": "Next items"
+  },
+  "artistMusic": {
+    "message": "Music from your artists"
+  },
+  "loadMore": {
+    "message": "Load more"
+  },
+  "noArtistMusic": {
+    "message": "No songs found for your selected artists."
+  },
+  "noMoreMusic": {
+    "message": "You have reached the end of the available songs."
+  },
+  "home": {
+    "message": "Home"
+  },
+  "hideHomeFilters": {
+    "message": "Hide home filters"
+  },
+  "hideHomeFiltersDescription": {
+    "message": "Hide mood and activity buttons such as Podcasts, Romance and Workout."
+  }
+}

@@ -1,0 +1,1 @@
+Enhance for Youtube Music™ customizes YouTube Music with reorderable home sections, random songs and sets from your artists, a focused player, and settings backup. Supports English and Portuguese. Install by loading this folder through Chrome's **Extensions → Developer mode → Load unpacked**. [Privacy policy](https://badalotti.dev/yt-music-enhancer-privacy.html).

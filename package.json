@@ -1,0 +1,9 @@
+{
+  "name": "yt-music-enhancer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node --check core.js && node --check content.js && node --check bridge.js && node --check background.js",
+    "test": "node --test *.test.js"
+  }
+}

@@ -1,0 +1,159 @@
+:root {
+  --ytme-surface: #212121;
+  --ytme-raised: #313131;
+  --ytme-text: #fff;
+  --ytme-secondary: #aaa;
+  --ytme-border: #444;
+  --ytme-accent: #3ea6ff;
+  --ytme-origin-accent: #ff9ba8;
+}
+
+html.ytme-hide-home-filters ytmusic-browse-response ytmusic-chip-cloud-renderer { display: none; }
+
+#ytme-config,
+.ytme-dialog,
+.ytme-custom-shelf {
+  font-family: inherit;
+  color: var(--ytmusic-color-general-foreground-a, var(--ytme-text));
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ytme-dialog *,
+.ytme-custom-shelf * { box-sizing: border-box; }
+
+.ytme-icon-button,
+.ytme-pill,
+.ytme-artist-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.ytme-icon-button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+#ytme-config { margin: 0 8px; }
+.ytme-icon-button svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.ytme-icon-button:hover { background: #ffffff1a; }
+.ytme-icon-button:disabled { opacity: .25; cursor: default; }
+.ytme-pill:disabled { opacity: .45; cursor: default; }
+.ytme-dialog :focus-visible,
+.ytme-custom-shelf :focus-visible,
+#ytme-config:focus-visible { outline: 2px solid var(--ytme-accent); outline-offset: 3px; }
+
+.ytme-dialog {
+  width: min(680px, calc(100vw - 32px));
+  max-height: min(820px, calc(100dvh - 48px));
+  padding: 0;
+  margin: auto;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  background: var(--ytmusic-color-general-background-b, var(--ytme-surface));
+  box-shadow: 0 24px 80px #0009;
+  color-scheme: dark;
+  overflow: hidden;
+}
+
+.ytme-dialog[open] { display: flex; flex-direction: column; animation: ytme-open 140ms ease-out; }
+.ytme-dialog::backdrop { background: #0009; }
+.ytme-header { display: flex; justify-content: space-between; align-items: flex-start; padding: 24px; border-bottom: 1px solid var(--ytme-border); }
+.ytme-dialog h2 { margin: 0; font-family: "YouTube Sans", "Roboto", sans-serif; font-weight: 600; font-size: 24px; line-height: 1.25; }
+.ytme-dialog h3 { margin: 0; font-size: 18px; font-weight: 500; }
+.ytme-dialog p { margin: 6px 0 16px; color: var(--ytme-secondary); }
+.ytme-header p { margin-bottom: 0; }
+.ytme-body { padding: 24px; overflow-y: auto; overscroll-behavior: contain; }
+.ytme-body > section + section { border-top: 1px solid var(--ytme-border); margin-top: 24px; padding-top: 24px; }
+.ytme-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ytme-pill { min-height: 36px; padding: 7px 16px; border-radius: 20px; background: var(--ytme-raised); font-weight: 500; }
+.ytme-pill:hover { background: #454545; }
+.ytme-primary { color: #030303; background: var(--ytme-text); }
+.ytme-primary:hover { background: #ddd; }
+.ytme-search { display: flex; gap: 12px; margin: 16px 0; }
+.ytme-search input { min-width: 0; flex: 1; border: 1px solid var(--ytme-border); border-radius: 8px; padding: 10px 14px; background: #181818; color: var(--ytme-text); font: inherit; }
+.ytme-search input::placeholder { color: var(--ytme-secondary); }
+.ytme-artists { display: flex; flex-wrap: wrap; gap: 8px; }
+.ytme-sets-artists { margin-bottom: 20px; }
+.ytme-artist-chip { padding: 4px 12px 4px 4px; border: 1px solid var(--ytme-border); border-radius: 24px; background: transparent; }
+.ytme-artist-chip:hover { background: var(--ytme-raised); }
+.ytme-sets-artists .ytme-artist-chip[aria-pressed="true"] { color: var(--ytme-surface); background: var(--ytme-text); border-color: var(--ytme-text); }
+.ytme-avatar { width: 32px; height: 32px; object-fit: cover; border-radius: 50%; background: var(--ytme-raised); }
+.ytme-result { display: flex; align-items: center; gap: 12px; padding: 10px 0; }
+.ytme-result-name { flex: 1; min-width: 0; }
+.ytme-result-name small { display: block; color: var(--ytme-secondary); }
+.ytme-section-row { display: flex; gap: 4px; align-items: center; min-height: 66px; border-bottom: 1px solid #ffffff0d; }
+.ytme-toggle-label { display: flex; flex: 1; min-width: 0; align-items: center; gap: 16px; cursor: pointer; }
+.ytme-section-name { overflow-wrap: anywhere; }
+.ytme-source { display: block; color: var(--ytme-secondary); font-size: 12px; }
+.ytme-toggle { appearance: none; flex-shrink: 0; position: relative; width: 34px; height: 14px; margin: 0 3px; border: 0; border-radius: 8px; background: #717171; cursor: pointer; }
+.ytme-toggle::after { content: ""; position: absolute; width: 20px; height: 20px; top: -3px; left: -2px; border-radius: 50%; background: #bdbdbd; box-shadow: 0 1px 3px #0006; }
+.ytme-toggle:checked { background: #3ea6ff66; }
+.ytme-toggle:checked::after { left: 16px; background: var(--ytme-accent); }
+.ytme-player-setting { margin-top: 16px; }
+.ytme-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 24px; border-top: 1px solid var(--ytme-border); }
+.ytme-save-status { font-size: 12px; color: var(--ytme-secondary); }
+.ytme-backup-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.ytme-backup-status:empty,
+.ytme-mix-status:empty { display: none; }
+
+html body ytmusic-app .ytme-home-sections { display: flex; flex-direction: column; }
+html.ytme-hide-player-panel ytmusic-player-page[player-page-ui-state="FULL_PLAYER_VIEW"] #side-panel { display: none; }
+@media (min-width: 936px) {
+  html.ytme-hide-player-panel ytmusic-player-page:not([is-mweb-modernization-enabled])[player-page-ui-state="FULL_PLAYER_VIEW"] #main-panel {
+    flex: 0 1 calc(100% - min(800px, var(--ytmusic-player-page-side-panel-width)) - var(--ytmusic-player-page-content-gap));
+    margin-inline: auto;
+  }
+}
+html body ytmusic-app .ytme-home-sections > :not([data-ytme-title]) { order: 1000; }
+html body ytmusic-app [data-ytme-hidden],
+html body ytmusic-app .ytme-custom-shelf[hidden] { display: none; }
+.ytme-custom-shelf { align-self: center; width: var(--ytmusic-content-width, calc(100% - 48px)); max-width: calc(100% - 32px); min-width: 0; padding-top: 32px; margin-bottom: 24px; }
+.ytme-shelf-title { font-family: "YouTube Sans", "Roboto", sans-serif; font-size: 28px; line-height: 1.2; font-weight: 700; margin: 0 0 20px; }
+.ytme-shelf-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+.ytme-shelf-heading .ytme-shelf-title { margin: 0; }
+.ytme-carousel-controls { display: flex; gap: 16px; margin-inline-start: auto; }
+.ytme-carousel-arrow { width: 36px; height: 36px; border: 1px solid var(--ytme-border); }
+.ytme-carousel-arrow:disabled { opacity: .3; background: transparent; }
+.ytme-mix-status { color: var(--ytme-secondary); }
+.ytme-source-badge { display: inline-flex; align-items: center; flex-shrink: 0; gap: 6px; padding: 3px 9px; border: 1px solid #ffffff26; border-radius: 999px; background: #ffffff08; color: #bdbdbd; font: 500 11px/16px "Roboto", sans-serif; letter-spacing: .15px; white-space: nowrap; vertical-align: middle; }
+.ytme-source-badge[data-source="enhancer"] { color: var(--ytme-origin-accent); background: #ff003314; border-color: #ff00333d; }
+.ytme-source-badge[data-source="enhancer"]::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+.ytme-section-name .ytme-source-badge { margin-inline-start: 8px; }
+.ytme-shelf-content + .ytme-shelf-content { margin-top: 32px; }
+.ytme-cards { display: flex; gap: 24px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: thin; scrollbar-color: #555 transparent; }
+.ytme-card { flex: 0 0 180px; min-width: 0; text-decoration: none; color: inherit; }
+.ytme-cover { display: block; width: 180px; height: 180px; object-fit: cover; background: var(--ytme-raised); border-radius: 4px; margin-bottom: 12px; }
+.ytme-card-title { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: 16px; font-weight: 500; }
+.ytme-card:hover .ytme-card-title { text-decoration: underline; }
+.ytme-card-subtitle { display: block; color: var(--ytme-secondary); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-top: 4px; }
+.ytme-empty,
+.ytme-shelf-body { color: var(--ytme-secondary); }
+.ytme-shelf-body > .ytme-pill { display: flex; width: fit-content; margin-top: 12px; }
+.ytme-shelf-content { color: var(--ytme-text); }
+.ytme-long-listens .ytme-cards { display: grid; grid-template-rows: repeat(4, auto); grid-auto-flow: column; grid-auto-columns: min(360px, 85vw); gap: 16px 24px; }
+.ytme-long-listens .ytme-card { display: grid; grid-template-columns: 48px 1fr; column-gap: 12px; align-items: center; }
+.ytme-long-listens .ytme-cover { width: 48px; height: 48px; grid-row: span 2; margin: 0; }
+.ytme-long-listens .ytme-card-title { -webkit-line-clamp: 1; }
+.ytme-long-listens .ytme-card-subtitle { margin: 0; }
+@keyframes ytme-open { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .ytme-dialog[open] { animation: none; } }
+@media (max-width: 600px) {
+  .ytme-header, .ytme-body { padding: 20px 16px; }
+  .ytme-footer { padding: 16px; }
+  .ytme-toggle-label { gap: 10px; }
+  .ytme-arrow { width: 32px; padding: 6px; }
+  .ytme-section-heading .ytme-pill { padding-inline: 12px; font-size: 12px; }
+  .ytme-cover { width: 150px; height: 150px; }
+  .ytme-card { flex-basis: 150px; }
+}
